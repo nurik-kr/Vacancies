@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Vacancies</string>
+    <string name="search">search</string>
+    <string name="au">AU.kg</string>
+    <string name="name_header">Все ваканскии <Кыргызстана></Кыргызстана></string>
+    <string name="search_ru">Поиск</string>
+    <string name="exit">Выход</string>
+    <string name="favorite_vacancies">Избранные вакансии</string>
+    <string name="tvTitle">Требуется заказчик качественный</string>
+    <string name="date">16:58 14 Apr 2021</string>
+    <string name="price">Договарная</string>
+    <string name="vacancies">Требуется заказчик качества количество гарантируем</string>
+</resources>
