@@ -27,6 +27,13 @@ class MainActivity : BaseActivity() {
         }.attach()
     }
 
+//        override fun onNavigationItemSelected(item: MenuItem): Boolean {
+//            when (item.itemId) {
+//                item.itemId -> Toast.makeText(this, "Clicked item one", Toast.LENGTH_SHORT).show()
+//            }
+//            return true
+//        }
+
     private fun getDataForPager(): ArrayList<ViewPagerModel> {
         val list = arrayListOf<ViewPagerModel>()
         list.add(

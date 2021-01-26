@@ -1,5 +1,6 @@
 package kg.nurik.vacancies.common
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.mikepenz.materialdrawer.AccountHeader
@@ -9,6 +10,7 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import kg.nurik.vacancies.R
+import kg.nurik.vacancies.ui.chosen.FavouriteActivity
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -20,6 +22,11 @@ abstract class BaseActivity : AppCompatActivity() {
         val vacancies = PrimaryDrawerItem().withName(getString(R.string.favorite_vacancies))
             .withIdentifier(2)
             .withIcon(R.drawable.icon_favorite_drawable)
+            .withOnDrawerItemClickListener { view, position, drawerItem ->
+                startActivity(Intent(this, FavouriteActivity::class.java))
+
+                return@withOnDrawerItemClickListener true
+            }
         val exit = PrimaryDrawerItem().withName(getString(R.string.exit))
             .withIdentifier(3)
             .withIcon(R.drawable.icon_exit)
